@@ -1,0 +1,32 @@
+<h3 [ngClass]="{'hideTable': dialogType!=='create'}" mat-dialog-title>Napravi oglas</h3>
+<h3 [ngClass]="{'hideTable': dialogType!=='edit'}" mat-dialog-title>Izmena oglasa</h3>
+<div mat-dialog-content>
+    <form [formGroup]="advertForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput placeholder="Naslov" formControlName="name">
+        </mat-form-field>
+        <br>
+
+        <mat-form-field>
+            <mat-label>Opis</mat-label>
+            <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+                value='{{advert.description}}' cdkAutosizeMaxRows="5" formControlName="description"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input type='number' matInput placeholder="Cena" formControlName="price">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <input matInput [min]="currentDate" [matDatepicker]="dp3" placeholder="Datum isteka oglasa" readonly
+                formControlName="endDate">
+            <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>
+        <br>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="onSubmit()">Potvrdi</button>
+    <button mat-raised-button (click)='closeDialog()'>Zatvori</button>
+</div>

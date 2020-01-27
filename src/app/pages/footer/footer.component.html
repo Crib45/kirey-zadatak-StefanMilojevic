@@ -1,0 +1,20 @@
+<div class="footerWrapper ">
+    <div class="openingTimes">
+        <h3>Radno vreme</h3>
+        <ul>
+            <li *ngFor="let day of days"><span class='footerText'>{{day.name}}: {{day.hoursStart}} -
+                    {{day.hoursEnd}}</span></li>
+        </ul>
+    </div>
+    <div class="openingTimes">
+        <h3>Lokacija</h3>
+        <span class='footerText'>Bulevar Nikole Tesle bb, Niš</span>
+    </div>
+    <div class="openingTimes">
+        <h3>Kontakt informacije</h3>
+        <ul>
+            <li><span class='footerText'>Telefon: 018-121 123</span></li>
+            <li><span class='footerText'>E-mail: mockupemail@email.com</span></li>
+        </ul>
+    </div>
+</div>

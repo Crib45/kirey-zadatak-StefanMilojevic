@@ -1,0 +1,10 @@
+div.mat-dialog-content{
+    margin: auto;
+}
+
+mat-form-field,input,textarea{
+    width:100%;
+}
+.hideTable {
+    display: none;
+}

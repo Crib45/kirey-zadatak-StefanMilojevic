@@ -1,0 +1,42 @@
+.clientPartWrap{
+    width:80%;
+    margin:auto;
+}
+
+table{
+    width:100%;
+    overflow-x: auto;
+}
+
+.clientPartWrap button{
+    margin-bottom: 1%;
+}
+
+textarea{
+    width:100% !important;
+}
+
+.optionsContainer{
+    width: 100%;
+}
+
+.optionsContainer mat-form-field{
+    float: right;
+}
+
+.hideTable {
+    display: none;
+}
+
+
+ .mat-column-description{
+    width: 30% !important;
+} 
+.mat-column-edit,.mat-column-remove{
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    .tableWrap {
+        overflow: scroll;
+    }
+}

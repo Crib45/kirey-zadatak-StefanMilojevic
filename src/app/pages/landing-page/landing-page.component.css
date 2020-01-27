@@ -1,0 +1,37 @@
+.landingPageWrap{
+    width:80%;
+    margin:auto;
+}
+
+mat-card{
+    margin: 2.5%;
+    float: left;
+    width: 100%;
+}
+
+.mat-card-image{
+    margin-left: 5% !important;
+    margin-top: 0.1% !important;
+    max-width:20%;
+    max-height: fit-content;
+}
+.petDescriptionContainer{
+    float:left;
+    width:65% !important;
+}
+
+.bigContainer{
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+    min-height: 200px !important;
+    background-image: url('https://savypets.files.wordpress.com/2017/08/cropped-labrador-retriever-dog-widescreen-high-quality-wallpaper-pictures-full-free-new-top-desktop-background-lovely-animals-puffy-dogs-download-2560x1600.jpg');
+    display:inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+mat-card button{
+    margin-right:1%;
+}
+

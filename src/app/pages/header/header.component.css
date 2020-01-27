@@ -1,0 +1,20 @@
+.spacer{
+    flex: 1 1 auto;
+}
+.homeSpan{
+    cursor: pointer;
+}
+mat-toolbar mat-toolbar-row button{
+    margin-left: 2em;
+}
+mat-toolbar mat-toolbar-row input{
+    font-size: 12px;
+}
+
+.mat-icon{
+    vertical-align: text-bottom;
+}
+::ng-deep .mat-form-field-label{
+    font-size: 12px !important;
+    text-align: start;
+}

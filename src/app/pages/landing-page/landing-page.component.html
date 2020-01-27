@@ -1,0 +1,33 @@
+<div class="landingPageWrap">
+    <div class="bigContainer">
+        <h1> <i class="material-icons">
+                pets
+            </i> Pet shop <i class="material-icons">
+                pets
+            </i></h1>
+    </div>
+    <mat-card *ngFor="let pet of adPetList">
+        <mat-card-header>
+            <mat-card-title>
+                {{pet.name}}
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class='petDescriptionContainer'>
+            <div>
+                {{pet.description}}
+            </div>
+        </mat-card-content>
+        <img mat-card-image [src]="pet.image" alt="Photo of a Shiba Inu" class='cardImage'> <br>
+        <button mat-stroked-button (click)='buyPet(pet)'>
+            Kupi kucnog ljubimca <i class="material-icons">
+                pets
+            </i>
+        </button>
+        <button mat-stroked-button (click)='followAd(pet)'>
+            Prati oglas <i class="material-icons">
+                pets
+            </i>
+        </button>
+    </mat-card>
+</div>
+<app-footer></app-footer>
